@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .glass {
+    @apply bg-white/10 backdrop-blur-md border border-white/20;
+  }
+  
+  .glass-dark {
+    @apply bg-slate-900/50 backdrop-blur-xl border border-slate-700/30;
+  }
+  
+  .glow-blue {
+    @apply shadow-[0_0_20px_rgba(59,130,246,0.3)];
+  }
+  
+  .glow-blue-lg {
+    @apply shadow-[0_0_40px_rgba(59,130,246,0.4)];
+  }
+}
+
+@layer base {
+  :root {
+    --background: 241 100% 4%;
+    --foreground: 0 0% 98%;
+    --card: 241 83% 12%;
+    --card-foreground: 0 0% 98%;
+    --popover: 241 83% 12%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 219 98% 61%;
+    --primary-foreground: 241 100% 4%;
+    --secondary: 217 91% 60%;
+    --secondary-foreground: 241 100% 4%;
+    --muted: 217 32% 17%;
+    --muted-foreground: 217 32% 70%;
+    --accent: 219 98% 61%;
+    --accent-foreground: 241 100% 4%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 217 32% 17%;
+    --input: 217 32% 17%;
+    --ring: 219 98% 61%;
+    --chart-1: 219 98% 61%;
+    --chart-2: 217 91% 60%;
+    --chart-3: 168 76% 42%;
+    --chart-4: 0 0% 50%;
+    --chart-5: 0 0% 70%;
+    --radius: 0.75rem;
+    --sidebar-background: 241 83% 12%;
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-primary: 219 98% 61%;
+    --sidebar-primary-foreground: 241 100% 4%;
+    --sidebar-accent: 217 32% 25%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 217 32% 17%;
+    --sidebar-ring: 219 98% 61%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
