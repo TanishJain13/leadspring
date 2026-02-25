@@ -128,12 +128,12 @@ export default function Footer() {
         >
           <p>&copy; {currentYear} LeadSpring. All rights reserved.</p>
           <div className="flex gap-6">
-            <a href="#" className="hover:text-blue-400 transition-colors">
+            <Link href="/contact" className="hover:text-blue-400 transition-colors">
               Privacy Policy
-            </a>
-            <a href="#" className="hover:text-blue-400 transition-colors">
+            </Link>
+            <Link href="/contact" className="hover:text-blue-400 transition-colors">
               Terms of Service
-            </a>
+            </Link>
           </div>
         </motion.div>
       </div>
