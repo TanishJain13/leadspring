@@ -2,10 +2,7 @@
 
 import { motion } from 'framer-motion';
 import ProcessSection from '@/components/sections/process';
-<<<<<<< HEAD
-=======
 import { Target, MessageSquare, Filter, Repeat, PhoneCall, ArrowRight, ShieldCheck } from 'lucide-react';
->>>>>>> 86af8bc (Final Updates)
 import Link from 'next/link';
 
 export default function ProcessPage() {
@@ -99,8 +96,6 @@ export default function ProcessPage() {
       {/* Overview Section */}
       <ProcessSection />
 
-<<<<<<< HEAD
-=======
       {/* Short Guarantee/Expectations Block */}
       <section className="py-12 bg-slate-900/50 relative overflow-hidden">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -163,7 +158,6 @@ export default function ProcessPage() {
         </div>
       </section>
 
->>>>>>> 86af8bc (Final Updates)
       {/* Detailed Steps */}
       <section className="py-20 sm:py-32 relative overflow-hidden">
         <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-blue-600/5 rounded-full blur-3xl" />
@@ -230,20 +224,6 @@ export default function ProcessPage() {
 
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
-<<<<<<< HEAD
-            <h2 className="text-4xl sm:text-5xl font-bold text-white mb-4 text-center">Timeline to Results</h2>
-            <p className="text-gray-400 text-center max-w-2xl mx-auto mb-16">
-              From first conversation to qualified leads in your pipeline
-            </p>
-          </motion.div>
-
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-            {[
-              { period: 'Week 1-2', milestone: 'Discovery & Strategy', description: 'Understanding your business and market' },
-              { period: 'Week 3-4', milestone: 'Campaign Launch', description: 'Ads live and generating leads' },
-              { period: 'Week 5-6', milestone: 'First Qualified Leads', description: 'Verified prospects in your pipeline' },
-              { period: 'Week 7+', milestone: 'Optimization & Scale', description: 'Improving quality and volume' },
-=======
             <h2 className="text-4xl sm:text-5xl font-bold text-white mb-4 text-center">Timeline to Predictable Demand</h2>
             <p className="text-gray-400 text-center max-w-2xl mx-auto mb-16">
               From alignment to sales-ready solar conversations
@@ -287,7 +267,6 @@ export default function ProcessPage() {
                 details: ['Scaling best-performing campaigns', 'Tightening qualification rules', 'Improving sales alignment'],
                 outcome: 'Stable, predictable high-intent demand — not random spikes.'
               },
->>>>>>> 86af8bc (Final Updates)
             ].map((item, index) => (
               <motion.div
                 key={index}
@@ -295,13 +274,6 @@ export default function ProcessPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-<<<<<<< HEAD
-                className="glass-dark p-6 rounded-xl border border-slate-700/30 text-center"
-              >
-                <p className="text-blue-400 font-bold mb-2">{item.period}</p>
-                <h3 className="text-lg font-semibold text-white mb-2">{item.milestone}</h3>
-                <p className="text-gray-400 text-sm">{item.description}</p>
-=======
                 className="glass-dark p-8 rounded-xl border border-blue-500/20 relative"
               >
                 <div className="flex flex-col md:flex-row gap-6">
@@ -324,7 +296,6 @@ export default function ProcessPage() {
                     </div>
                   </div>
                 </div>
->>>>>>> 86af8bc (Final Updates)
               </motion.div>
             ))}
           </div>
