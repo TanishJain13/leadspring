@@ -23,6 +23,29 @@ export default function PricingPage() {
         </div>
       </section>
 
+      {/* Social Proof for Pricing */}
+      <section className="py-10 relative overflow-hidden">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
+            <div className="bg-blue-900/10 p-8 rounded-2xl border border-blue-500/20 max-w-3xl mx-auto">
+              <p className="text-xl md:text-2xl text-gray-300 italic mb-6">
+                "LeadSpring's structured demand engine prepared prospects so well that our sales team closed deals faster with less wasted time."
+              </p>
+              <div className="flex items-center justify-center gap-4">
+                <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center font-bold text-white text-sm">
+                  EPC
+                </div>
+                <div className="text-left">
+                  <p className="text-white font-bold text-sm">Solar EPC Owner</p>
+                  <p className="text-blue-400 text-xs">Gujarat</p>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+
       {/* Pricing Section */}
       <PricingSection onPilotClick={() => { }} />
 

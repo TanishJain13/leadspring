@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Target, Heart, Zap, Users } from 'lucide-react';
+import { Target, Heart, Zap, Users, Linkedin } from 'lucide-react';
 import Link from 'next/link';
 import PartnerMarquee from '@/components/sections/partner-marquee';
 
@@ -205,6 +205,61 @@ export default function AboutPage() {
                     <span className="font-medium">shubham@leadspring.in</span>
                   </div>
                 </div>
+
+                <div className="hidden md:block w-px bg-slate-700/50"></div>
+
+                <Link
+                  href="https://linkedin.com"
+                  target="_blank"
+                  className="flex items-center justify-center gap-3 hover:text-blue-400 transition-colors"
+                >
+                  <div className="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center text-blue-400">
+                    <Linkedin className="w-5 h-5" />
+                  </div>
+                  <div className="text-left">
+                    <p className="text-xs text-gray-500 uppercase tracking-wider">Connect</p>
+                    <span className="font-medium">LinkedIn</span>
+                  </div>
+                </Link>
+              </div>
+
+              <div className="mt-12 text-left space-y-4 text-gray-300 leading-relaxed border-t border-slate-700/50 pt-8">
+                <h4 className="text-2xl font-bold text-white mb-6">Founder Story</h4>
+                <p>I started LeadSpring after seeing a clear problem in the solar industry — EPCs weren't lacking leads, they were lacking lead readiness.</p>
+                <p>Too many price checkers. Too many forgotten enquiries. Too much sales time wasted on people who were never serious.</p>
+                <p>The issue wasn't marketing volume. It was quality and intent.</p>
+                <p>With a background in performance marketing and AI automation, I built LeadSpring as a Predictable Demand Engine for Solar EPCs — combining high-intent Meta campaigns with AI/WhatsApp nurturing and multi-stage qualification.</p>
+                <div className="pt-4">
+                  <p className="font-medium text-blue-400 mb-2">Today, our focus is simple:</p>
+                  <p className="text-white text-lg">Help solar EPC teams speak only with serious, informed buyers — and close faster with less friction.</p>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Proof + Results */}
+      <section className="py-20 sm:py-32 bg-gradient-to-b from-background via-slate-900/20 to-background relative overflow-hidden">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative text-center">
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
+            <h2 className="text-4xl sm:text-5xl font-bold text-white mb-12">What Solar EPCs Say About Us</h2>
+            <div className="glass-dark p-10 rounded-2xl border border-blue-500/20 relative">
+              <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-blue-500/10 p-4 rounded-full backdrop-blur-md border border-blue-500/20">
+                <svg className="w-8 h-8 text-blue-400" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" /></svg>
+              </div>
+              <p className="text-xl md:text-2xl text-gray-300 italic mb-8 mt-4">
+                "Since LeadSpring, our sales team only talks with serious solar buyers who understand our value."
+              </p>
+              <div className="flex items-center justify-center gap-4">
+                <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center font-bold text-white">
+                  EPC
+                </div>
+                <div className="text-left">
+                  <p className="text-white font-bold">Solar EPC</p>
+                  <p className="text-blue-400 text-sm">Maharashtra</p>
+                </div>
+
               </div>
             </div>
           </motion.div>
