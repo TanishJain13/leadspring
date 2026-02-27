@@ -126,8 +126,22 @@ export default function Footer() {
           viewport={{ once: true }}
           className="flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-gray-400"
         >
-          <p>&copy; {currentYear} LeadSpring. All rights reserved.</p>
-          <div className="flex gap-6">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2 w-full sm:w-auto text-center">
+            <p>&copy; {currentYear} LeadSpring. All rights reserved.</p>
+            <span className="hidden sm:inline">|</span>
+            <p className="flex items-center justify-center gap-1">
+              Developed by{' '}
+              <a
+                href="https://stwebworks.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-500 hover:text-blue-400 hover:underline transition-all duration-200 font-medium"
+              >
+                S&T Web Works
+              </a>
+            </p>
+          </div>
+          <div className="flex gap-6 mt-4 sm:mt-0">
             <Link href="/contact" className="hover:text-blue-400 transition-colors">
               Privacy Policy
             </Link>
